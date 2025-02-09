@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* mobile query */
+        .main {
+            height: 200px;
+            width: 50%;
+            background-color: red;
+        }
+
+        /* tables 576 > 768 */
+        @media only screen and (min-width:576px) {
+            .main {
+                height: 500px;
+                width: 100%;
+                background-color: aqua;
+            }
+        }
+
+        /* 768px > min tab */
+        @media only screen and (min-width:768px) {
+            .main {
+                background-color: rgb(194, 240, 29);
+            }
+        }
+
+        /* pc > tv 992 >  */
+        @media only screen and (min-width:992px) {
+            .main {
+                background-color: rgb(175, 11, 224);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+    </div>
+</body>
+
+</html>

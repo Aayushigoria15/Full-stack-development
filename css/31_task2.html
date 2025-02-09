@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 300px;
+            width: 200px;
+            border: 2px solid;
+
+            background-color: yellow;
+            /* transform: scale(0); */
+            transition: 1s;
+            overflow: hidden;
+
+
+        }
+
+        .child {
+            height: 300px;
+            width: 200px;
+            transform: scale(0);
+            /* background-color: red; */
+        }
+
+        .main:hover .child {
+            transform: scale(1);
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">
+            <!-- <h2>Ecommerce</h2> -->
+            <span style="font-size:large;">Ecomance</span> <br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.
+        </div>
+
+    </div>
+</body>
+
+</html>

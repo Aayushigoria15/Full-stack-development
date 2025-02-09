@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            list-style: none;
+        }
+
+        .nav .navlist {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .list {
+            list-style: none;
+            position: absolute;
+            background-color: aqua;
+            top: 100%;
+            left: 0;
+            padding: 10px;
+            display: none;
+        }
+
+        .navlist:hover .list {
+            display: block;
+        }
+
+        .value {
+            display: none;
+            background-color: rgb(128, 240, 184);
+            padding: 10px 20px;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            list-style: none;
+        }
+
+        .opt:hover .value {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="navlist">Home
+            <ul class="list">
+                <li class="opt">Home 1
+                    <ul class="value">
+                        <li>no.1</li>
+                        <li>no.2</li>
+                        <li>no.3</li>
+                    </ul>
+                </li>
+                <li>Home 2</li>
+                <li>Home 3</li>
+                <li>Home 4</li>
+            </ul>
+        </li>
+        <li class="navlist">About
+            <ul class="list">
+                <li>About 1</li>
+                <li>About 2</li>
+                <li>About 3</li>
+                <li>About 4</li>
+                <li>About 4</li>
+                <li>About 4</li>
+                <li>About 4</li>
+                <li>About 4</li>
+            </ul>
+        </li>
+        <li class="navlist">Contact
+            <ul class="list">
+                <li>Contact 1</li>
+                <li>Home 2</li>
+                <li>Home 3</li>
+                <li>Home 4</li>
+            </ul>
+        </li>
+        <li class="navlist">Help</li>
+
+    </ul>
+    <h1>hello</h1>
+</body>
+
+</html>

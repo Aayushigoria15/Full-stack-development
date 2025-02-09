@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- canavs :- 1 pixal base px -->
+    <!-- zoom  canavs jpg xy -->
+    <!-- Javascript run -->
+
+    <canvas id="canavs"></canvas>
+    <script>
+        var cnv = document.getElementById("canavs")
+        var big = cnv.getContext('2d')
+        big.fillStyle = 'red';
+        big.fillRect(20, 20, 130, 70);
+        big.stroke();
+    </script>
+
+
+    <!-- svg :- rater grphic  -->
+    <!-- zoom logo xyz -->
+    <!-- without javascript -->
+
+    <svg viewBox="-10 -10 300 100" stroke="black" fill="pink">
+        <circle cx="40" cy="40" r="40" />
+    </svg>
+
+
+
+</body>
+
+</html>

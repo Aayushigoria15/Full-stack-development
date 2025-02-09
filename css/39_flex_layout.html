@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        ul li {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        li::after {
+            content: "";
+            height: 5px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .5s;
+            transform: scaleX(0);
+        }
+
+        li:hover::after {
+            transform: scaleX(1);
+        }
+
+        #sec1 {
+            background-color: lightcoral;
+            display: flex;
+        }
+
+        .main {
+            height: 300px;
+            border: 2px solid;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">logo</div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+            <div class="icon">icon</div>
+        </nav>
+    </header>
+
+    <section id="sec1">
+        <div class="main">main1</div>
+        <div class="main">main2</div>
+        <div class="main">main3</div>
+        <div class="main">main4</div>
+    </section>
+</body>
+
+</html>

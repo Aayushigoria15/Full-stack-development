@@ -1,0 +1,347 @@
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .btn-april2 {
+    border-radius: 10px;
+    background-color: #649483;
+    padding: 10px 15px;
+  }
+  .card2 .img {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .love-img .box {
+    width: 250px;
+    height: 100%;
+    border-radius: 29px;
+    background-color: #dd7017;
+    position: relative;
+    left: 5%;
+  }
+  .love-meal-img {
+    position: absolute;
+    width: 100%;
+    right: 50%;
+    top: 30%;
+    bottom: 30%;
+  }
+  .btn-learn {
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+  }
+  .btn-jan {
+    padding: 10px 15px;
+    margin-right: 10px 10px 10px 0;
+  }
+  .made-for-you {
+    width: 60%;
+  }
+  #foot .row {
+    flex-wrap: wrap;
+  }
+  #foot .row .col-60 .col {
+    width: 45%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+
+  #foot .row .col-40 {
+    width: 35%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .foot-mail {
+    width: 100%;
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .meals-content .row {
+    display: block;
+  }
+
+  .meals-content .row .col {
+    width: 100%;
+  }
+
+  .navlist {
+    display: none;
+  }
+  .meal-h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .meal-content .meal-p {
+    width: 80%;
+  }
+  .meal-box {
+    width: 50%;
+    margin-left: 20%;
+  }
+  .meal-images {
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  .icon-box {
+    margin: 0 50px;
+  }
+  .img img {
+    width: 150px;
+  }
+  #Favorites .row {
+    flex-wrap: wrap;
+  }
+  #Favorites .row .col {
+    width: 45%;
+  }
+  #April-meals .col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
+  .aprilimg {
+    width: 60%;
+    margin-bottom: 0px;
+  }
+  .aprilmeal {
+    width: 90%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  .btn-april {
+    padding: 15px 20px;
+  }
+  #April-meals .col2 {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .aprilimg2 {
+    /* margin-top: 10px; */
+    width: 60%;
+    margin-bottom: 100px;
+  }
+  .aprilmeal2-1 {
+    width: 100%;
+    margin-bottom: 100px;
+    /* border: 2px solid; */
+  }
+  .btn-april2 {
+    border-radius: 10px;
+    background-color: #649483;
+    padding: 10px 15px;
+  }
+  #Our-process .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #Our-process .row .col {
+    width: 60%;
+  }
+  .card2 {
+    padding: 30px 0;
+    margin-bottom: 50px;
+    margin-left: 100px;
+  }
+  .card2 .img {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .love-img .box {
+    width: 250px;
+    left: 5%;
+  }
+  .love-meal-img {
+    width: 100%;
+    right: 50%;
+    top: 30%;
+    bottom: 30%;
+  }
+  .btn-learn {
+    padding: 10px 15px;
+    margin: 10px 10px 10px 0;
+  }
+  .btn-jan {
+    padding: 10px 15px;
+    margin-right: 10px 10px 10px 0;
+  }
+  .meal-content .meal-p {
+    width: 100%;
+  }
+  .meal-h1 {
+    width: 100%;
+  }
+  #what-they-say .row {
+    flex-wrap: wrap;
+  }
+
+  #what-they-say .row .col {
+    width: 45%;
+  }
+  .W-card {
+    margin-bottom: 10px;
+    padding: 0 0;
+  }
+  .btn-jan-meal {
+    padding: 10px 10px;
+    margin: 0px 25%;
+  }
+  .img1 {
+    width: 400px;
+    top: 50%;
+    right: 75%;
+  }
+  .img2 {
+    position: absolute;
+    width: 400px;
+    top: 10%;
+    left: 75%;
+  }
+  .made-for-you {
+    width: 70%;
+    padding-bottom: 100px;
+  }
+  .plan-p {
+    width: 85%;
+    margin-left: 50px;
+  }
+  #foot .row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #foot .row .col-60 .col {
+    width: 40%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+
+  #foot .row .col-40 {
+    width: 30%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .foot-mail {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .btn-sub {
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #Favorites .row {
+    display: block;
+    margin-left: 100px;
+  }
+  #Favorites .row .col {
+    width: 75%;
+  }
+  .aprilimg {
+    width: 60%;
+    margin-bottom: 0px;
+  }
+  .aprilmeal {
+    width: 90%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  .btn-april {
+    padding: 10px 15px;
+  }
+  .aprilimg2 {
+    width: 60%;
+  }
+  .aprilmeal2-1 {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .btn-april2 {
+    padding: 10px 15px;
+  }
+  #Our-process .row .col {
+    width: 70%;
+  }
+  .card2 {
+    padding: 30px 0;
+    margin-bottom: 50px;
+    margin-left: 100px;
+  }
+  .love-img .box {
+    width: 150px;
+  }
+  .love-meal-img {
+    right: 50%;
+    top: 35%;
+    bottom: 35%;
+  }
+  .meal-content .meal-p {
+    width: 100%;
+  }
+  .meal-h1 {
+    width: 100%;
+  }
+
+  #what-they-say .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #what-they-say .row .col {
+    width: 80%;
+  }
+  .W-card {
+    margin-bottom: 10px;
+    padding: 0 0;
+  }
+  .btn-jan-meal {
+    padding: 10px 10px;
+    margin: 0px 90px;
+  }
+  .img1 {
+    width: 300px;
+    top: 50%;
+    right: 80%;
+  }
+  .img2 {
+    position: absolute;
+    width: 300px;
+    top: 10%;
+    left: 75%;
+  }
+  .made-for-you {
+    width: 70%;
+    padding-bottom: 100px;
+  }
+  .plan-p {
+    width: 80%;
+    margin-left: 40px;
+  }
+  #foot .row {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  #foot .row .col-60 .col {
+    width: 60%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+
+  #foot .row .col-40 {
+    width: 60%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .foot-mail {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .btn-sub {
+    padding: 10px 10px;
+  }
+}

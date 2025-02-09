@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overflow {
+            height: 600px;
+            width: 700px;
+            overflow: hidden;
+            margin: 100px auto;
+
+        }
+
+        .img {
+            height: 350px;
+            width: 600px;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 200px auto;
+            border: 2px solid;
+            transform: translate(-20px);
+            transition: .5s;
+            font-weight: bold;
+            text-align: right;
+            line-height: 200px;
+            letter-spacing: 8px;
+            font-size: 40px;
+
+
+        }
+
+        /* .img:hover {
+            transform: translate(100px);
+        } */
+
+        .border {
+            height: 210px;
+            width: 450px;
+            border: 5px, solid white;
+            margin: 60px auto;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+            line-height: 300px;
+            letter-spacing: 8px;
+            transform: translate(-20px);
+            transition: .5s;
+            opacity: 0;
+
+        }
+
+        .img:hover {
+            transform: translate(0%);
+        }
+
+        .img:hover .border {
+            transform: translate(0%);
+            opacity: 1;
+        }
+
+        .img::first-letter {
+            color: #d81111;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overflow">
+        <div class="img">
+            <!-- FALL AHEAD -->
+            <div class="border">
+                New Arrival
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

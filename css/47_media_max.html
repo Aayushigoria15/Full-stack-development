@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* default pc tv */
+        .main {
+            height: 500px;
+            background: red;
+        }
+
+        /* pc */
+        @media only screen and (max-width:1140px) {
+            .main {
+                background: rgb(13, 216, 115);
+            }
+        }
+
+        /*  min tab 992 < 768 */
+        @media only screen and (max-width:992px) {
+            .main {
+                background: linear-gradient(red, green, blue);
+            }
+        }
+
+        /* tablete 768 < 576 */
+        @media only screen and (max-width:768px) {
+            .main {
+                width: 50%;
+                background: blue;
+            }
+        }
+
+        /* mobile 576 < 0 */
+        @media only screen and (max-width:576px) {
+            .main {
+                height: 200px;
+                width: 100%;
+                background: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- media query :- only width  -->
+    <div class="main">
+
+    </div>
+    <!-- https://www.freepik.com/search?format=search&last_filter=page&last_value=3&page=3&query=website+layout&selection=1&type=psd#uuid=eabb6d2f-fa80-4bed-955b-d0839d7ebbda -->
+</body>
+
+</html>

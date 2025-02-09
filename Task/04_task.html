@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid;
+
+        }
+
+        #box1 {
+            position: relative;
+        }
+
+        .box2 {
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            position: absolute;
+            /* margin-top: 50%;
+            margin-left: 50%; */
+            transform: translate(50% 50%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1" id="box1">
+            <div class="box2"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
