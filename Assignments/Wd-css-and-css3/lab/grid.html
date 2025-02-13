@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 400px;
+            gap: 50px;
+
+        }
+
+        .img {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .title-h2,
+        .price-p {
+            text-align: center;
+        }
+
+        .box {
+            border: 2px solid;
+        }
+
+        .box:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="img"><img src="/Mealplan/images/Ellipse .png" width="100%" height="100%" alt=""></div>
+            <h2 class="title-h2">Product 1</h2>
+            <p class="price-p">100$</p>
+        </div>
+        <div class="box">
+            <div class="img"><img src="/Mealplan/images/Ellipse .png" width="100%" height="100%" alt=""></div>
+            <h2 class="title-h2">Product 2</h2>
+            <p class="price-p">100$</p>
+        </div>
+        <div class="box">
+            <div class="img"><img src="/Mealplan/images/Ellipse .png" width="100%" height="100%" alt=""></div>
+            <h2 class="title-h2">Product 3</h2>
+            <p class="price-p">100$</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

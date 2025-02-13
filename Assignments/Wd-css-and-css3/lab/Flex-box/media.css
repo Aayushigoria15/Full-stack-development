@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .sidebar {
+    width: 20%;
+  }
+  .content {
+    width: 100%;
+  }
+  .nav ul {
+    display: none;
+  }
+}

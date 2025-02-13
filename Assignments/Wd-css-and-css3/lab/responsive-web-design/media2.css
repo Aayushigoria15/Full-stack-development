@@ -1,0 +1,81 @@
+@media only screen and (max-width: 768px) {
+  .meals-content .row {
+    display: block;
+  }
+
+  .meals-content .row .col {
+    width: 100%;
+  }
+
+  .navlist {
+    display: none;
+  }
+  .meal-h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .meal-content .meal-p {
+    width: 80%;
+  }
+  .meal-box {
+    width: 50%;
+    margin-left: 20%;
+  }
+  .meal-images {
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  .icon-box {
+    margin: 0 50px;
+  }
+  .img img {
+    width: 150px;
+  }
+  #foot .row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #foot .row .col-60 .col {
+    width: 40%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+
+  #foot .row .col-40 {
+    width: 30%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .foot-mail {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .btn-sub {
+    padding: 5px 5px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #foot .row {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  #foot .row .col-60 .col {
+    width: 60%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+
+  #foot .row .col-40 {
+    width: 60%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .foot-mail {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .btn-sub {
+    padding: 10px 10px;
+  }
+}
