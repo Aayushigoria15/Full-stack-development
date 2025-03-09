@@ -97,3 +97,26 @@
   color: #ffffff;
   font-family: "Aachen BT";
 }
+#Our-food-quality {
+  width: 2037px;
+  height: 1691px;
+  background-color: #e58f00;
+}
+#Our-food-quality .row .col {
+  width: 50%;
+  /* border: 2px solid white; */
+  position: relative;
+}
+#Our-food-quality .our-h3 {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Aachen BT";
+  padding: 300px 0 0 100px;
+}
+.our-p {
+  width: 70%;
+  font-size: clamp(20px, 3.5vw, 33px);
+  color: #ffffff;
+  font-family: "Aachen BT";
+  padding: 0 0 0px 100px;
+}
