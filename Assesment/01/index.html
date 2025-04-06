@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Registration Form</title>
+  <link rel="stylesheet" href="/Assesment/01/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="registrationForm" novalidate>
+      <h2>Responsive Registration Form</h2>
+
+      <input type="email" id="email" placeholder="Email">
+      <div class="error" id="emailError"></div>
+
+      <input type="password" id="password" placeholder="Password">
+      <div class="error" id="passwordError"></div>
+
+      <input type="password" id="repassword" placeholder="Re-type Password">
+      <div class="error" id="repasswordError"></div>
+
+      <input type="text" id="mobile" placeholder="Mobile Number" maxlength="10">
+      <div class="error" id="mobileError"></div>
+
+      <div class="name-fields">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+      </div>
+      <div class="error" id="nameError"></div>
+
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+      <div class="error" id="genderError"></div>
+
+      <select id="country">
+        <option value="">Select a country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+      </select>
+      <div class="error" id="countryError"></div>
+
+      <label><input type="checkbox" id="terms"> I agree with terms and conditions</label>
+      <div class="error" id="termsError"></div>
+
+      <label><input type="checkbox" id="newsletter"> I want to receive the newsletter</label>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="/Assesment/01/script.js"></script>
+</body>
+
+</html>

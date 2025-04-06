@@ -1,0 +1,11 @@
+.btn1, .btn {
+  border: 5px solid;
+  padding: 10px 20px;
+  background: linear-gradient(red, green);
+  color: white;
+  font-size: 30px;
+}
+
+.btn {
+  border-color: green;
+}/*# sourceMappingURL=style.css.map */

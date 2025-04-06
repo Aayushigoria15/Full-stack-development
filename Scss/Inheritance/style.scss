@@ -1,0 +1,17 @@
+// one time property
+%btn {
+  border: 5px solid;
+  padding: 10px 20px;
+  background: linear-gradient(red, green);
+  color: white;
+  font-size: 30px;
+}
+
+.btn {
+  @extend %btn;
+  border-color: green;
+}
+
+.btn1 {
+  @extend %btn;
+}

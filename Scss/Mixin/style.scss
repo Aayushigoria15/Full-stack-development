@@ -1,0 +1,49 @@
+// without para
+@mixin border() {
+  border: 5px solid red;
+}
+
+// with para
+@mixin border2($size, $color) {
+  border: $size solid $color;
+}
+
+// flex
+@mixin display($dis) {
+  display: flex;
+  justify-content: $dis;
+}
+
+@mixin theme($color, $show) {
+  background-color: $color;
+  box-shadow: 10px 10px 20px $show;
+  border-radius: 20px;
+}
+
+h1 {
+  @include border();
+}
+h2 {
+  @include border();
+}
+
+.para {
+  @include border2(10px, blue);
+}
+.pa {
+  @include border2(5px, green);
+}
+
+.main {
+  @include display(space-between);
+
+  @media only screen and (max-width: 992px) {
+    @include display(center);
+  }
+  .box {
+    height: 200px;
+    width: 200px;
+    @include border();
+    @include theme(rgb(214, 55, 55), black);
+  }
+}

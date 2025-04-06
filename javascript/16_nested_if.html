@@ -17,39 +17,82 @@
 
     <script>
 
-        // for(let r=1;r<=5;r++){  
-        //     // console.log(r)
-        //     // console.log("*")
-        //     // document.write("*","<br>")
-        //     for(let c=1;c<=5;c++){  
-        //         console.log("*")
-        //         document.write("* ")
-        //     }
-        //     document.write("<br>")
-        // }
-
-
+        for (let r = 1; r <= 5; r++) {
+            // console.log(r)
+            // console.log("*")
+            // document.write("*","<br>")
+            for (let c = 1; c <= 5; c++) {
+                console.log("*")
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
         for (let r = 1; r <= 5; r++) { //2
             console.log("*")
-            for (let s = 2; s < r; s++) { //3 <= 2
-                document.write("  ")
+            for (let c = 1; c <= r; c++) { //3 <= 2
+                document.write("* ")
             }
-            for (let c = 1; c <= r; c--) {
-                document.write("*")
+            document.write("<br>")
+        }
+        for (let r = 1; r <= 5; r++) {
+
+            console.log("*")
+            for (let c = 5; c >= r; c--) {
+                document.write("* ")
             }
-
-
             document.write("<br>")
         }
 
 
-        // for (let r = 5; r >= 1; r--) {
-        //     // console.log(r)
-        //     for (let c = 1; c <= r; c++) {
-        //         document.write(r)
+        for (let r = 1; r <= 5; r++) {
+            for (let s = 1; s <= 5 - r; s++) {
+                document.write(" # ");
+            }
+            for (let c = 1; c <= r; c++) {
+                document.write(" * ");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>")
+
+        for (let r = 5; r >= 1; r--) {
+            for (let s = 1; s <= 5 - r; s++) {
+                document.write(" # ");
+            }
+            for (let c = 1; c <= r; c++) {
+                document.write(" * ");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>")
+
+
+
+
+
+
+        // for (let r = 1; r <= 5; r++) { //2
+        //     console.log("*")
+        //     for (let s = 2; s < r; s++) { //3 <= 2
+        //         document.write("  ")
         //     }
+        //     for (let c = 1; c <= r; c--) {
+        //         document.write("*")
+        //     }
+
+
         //     document.write("<br>")
         // }
+
+
+        for (let r = 5; r >= 1; r--) {
+            // console.log(r)
+            for (let c = 1; c <= r; c++) {
+                document.write(r)
+            }
+            document.write("<br>")
+        }
+
 
 
 
