@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Input</title>
+</head>
+
+<body>
+    <input type="text" id="numberInput" placeholder="Enter a number greater than 10">
+    <button id="submitBtn">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        let numberInput = document.getElementById("numberInput");
+        let submitBtn = document.getElementById("submitBtn");
+        let output = document.getElementById("output");
+
+        submitBtn.addEventListener("click", checkInput);
+
+        function checkInput() {
+            let userInput = parseFloat(numberInput.value);
+            if (isNaN(userInput) || userInput <= 10) {
+                output.innerText = "Please enter a number greater than 10.";
+                numberInput.value = "";
+                numberInput.focus();
+            } else {
+                output.innerText = "You entered a valid number: " + userInput;
+            }
+        }
+    </script>
+</body>
+
+</html>
