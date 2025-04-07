@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <style>
+        swiper-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <swiper-container class="mySwiper" pagination="true">
+        <swiper-slide>
+            <img src="/Mealplan/images/img1.png" height="100%" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/Mealplan/images/img2.png" height="100%" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/Mealplan/images/img3.png" height="100%" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/Mealplan/images/img4.png" height="100%" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide><img src="/Mealplan/images/apimg1.png" height="100%" width="100%" alt=""></swiper-slide>
+        <swiper-slide><img src="/Mealplan/images/apimg2.1.png" height="100%" width="50%" alt=""></swiper-slide>
+        <swiper-slide><img src="/Mealplan/images/apimg2.2.png" height="100%" width="50%" alt=""></swiper-slide>
+        <swiper-slide><img src="/Mealplan/images/apimg2.3.png" height="100%" width="50%" alt="">/swiper-slide>
+            <swiper-slide><img src="/Mealplan/images/apimg2.4.png" height="100%" width="50%" alt=""></swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

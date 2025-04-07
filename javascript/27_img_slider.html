@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="/Mealplan/images/apimg1.png" height="100%" width="100%" alt="" id="img">
+    </div>
+    <br>
+    <button onclick="silder()">chnag image</button>
+
+
+    <script>
+
+        let img_tag = document.getElementById("img")
+        console.log(img_tag.src)
+
+        function silder() {
+
+            if (img_tag.src.match("/Mealplan/images/apimg1.png")) {
+                img_tag.src = "/Mealplan/images/apimg2.1.png"
+            }
+            else if (img_tag.src.match("/Mealplan/images/apimg2.1.png")) {
+                img_tag.src = "/Mealplan/images/apimg2.2.png"
+            }
+            else if (img_tag.src.match("/Mealplan/images/apimg2.2.png")) {
+                img_tag.src = "/Mealplan/images/apimg2.3.png"
+            }
+            else {
+                img_tag.src = "/Mealplan/images/apimg1.png"
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
