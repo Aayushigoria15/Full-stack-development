@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // api data
+        function wait() {
+            setTimeout(() => {
+                console.log("hello 4")
+            }, 4000)
+        }
+
+        async function fetch2() {
+            console.log(1)
+            console.log(2)
+            console.log(3)
+            const res = await wait()
+            res
+            // console.log(res)
+            console.log(4)
+            console.log(5)
+
+        }
+        fetch2()
+
+    </script>
+</body>
+
+</html>

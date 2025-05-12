@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <script>
+        //    function getdata(){
+        //     fetch("https://660d95e36ddfa2943b34c530.mockapi.io/data",{
+        //         method:"GET"
+        //     })
+        //     .then((res)=>{
+        //         return res.json()
+        //     })
+        //     .then((data)=>{
+        //         console.log(data)
+        //     })
+        //    }
+        //    getdata()
+
+        // get data get read
+        const getdata = async () => {
+            const res = await axios.get("https://67fa0add094de2fe6ea2fbd2.mockapi.io/users/products")
+            console.log(res.data)
+            res.data.map((user) => {
+                console.log(user)
+            })
+        }
+        // getdata()
+
+        // post
+        let person = {
+            name: "xyz"
+
+        }
+
+        const createdata = async () => {
+            const res = await axios.post("https://67fa0add094de2fe6ea2fbd2.mockapi.io/users/products", person)
+            console.log(res.data)
+        }
+
+        // createdata()
+
+        // delete method
+        const deletedata = async () => {
+            const res = await axios.delete("https://67fa0add094de2fe6ea2fbd2.mockapi.io/users/products/20")
+            console.log(res.data)
+        }
+        // deletedata()
+
+
+        let person1 = {
+            id: 22,
+            name: "abc",
+
+        }
+
+        const updatedata = async () => {
+            const res = await axios.put(`https://67fa0add094de2fe6ea2fbd2.mockapi.io/users/products/${person1.id}`, person1)
+            console.log(res.data)
+        }
+        // updatedata()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!-- oops :- object orited prog lag  -->
+
+<!-- 1) class and object :- cons , static
+    2) encu / abs not use react
+    3)inhritance
+    4) polmoriaztion
+
+
+    1)class -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- class :- collection of data member(varibles) and memeber function (fucntion1) as class  -->
+    <!-- class as blue print of object   -->
+
+    <!-- syntax :- 
+    class classname {
+        member function {
+            data memebr 
+        }
+        member function {
+            data memebr 
+        }
+        member function {
+            data memebr 
+        }
+    } 
+    
+    let obj = new classname
+    
+    -->
+
+    <script>
+
+        class Bank {
+            // memebr function
+            x = function Details(pin, blance) {
+
+                // data member
+                let bankName = "HDFC";
+                let bankIFSC = "HDFC0002H";
+                let bankpin = pin;
+                let bankBalance = blance;
+
+                console.log("bank name :- ", bankName)
+                console.log("bank IFSC :- ", bankIFSC)
+                console.log("bank Bankpin :- ", bankpin)
+                console.log("bank Balance :- ", bankBalance)
+            }
+
+            y = function deposit() {
+                console.log("Deposit function call")
+            }
+
+
+        }
+
+        // console.log(Bank)
+
+        let aayushi = new Bank
+        console.log(aayushi)
+        aayushi.x(123, 40000)
+        aayushi.y()
+
+        let vivu = new Bank
+        console.log(vivu)
+        vivu.x(234, 30000)
+        vivu.y()
+
+        let user1 = new Bank
+        user1.y()
+        user1.x(345, 10000)
+
+    </script>
+
+
+
+</body>
+
+</html>
