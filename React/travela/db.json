@@ -1,0 +1,103 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "name": "Adventures Trip",
+      "posted": "Royal Hamblin",
+      "desc": "Hello Adventures park...",
+      "date": "28-01-2023",
+      "img": "https://images.pexels.com/photos/28367460/pexels-photo-28367460/free-photo-of-the-road-to-jasper.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": 2,
+      "name": "Adventures Trip 2",
+      "posted": "Royal Data",
+      "desc": "Hello Adventures park 2...",
+      "date": "30-04-2023",
+      "img": "https://images.pexels.com/photos/31027069/pexels-photo-31027069/free-photo-of-colorful-longtail-boats-in-bangkok-canal.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "1750497382082",
+      "name": "Ahjffh",
+      "posted": "dddddddd",
+      "desc": "dddddd",
+      "date": "2025-06-14",
+      "img": ""
+    }
+  ],
+  "guies": [
+    {
+      "id": 1,
+      "name": "Het patel",
+      "Designation": "tour guies",
+      "img": "https://images.pexels.com/photos/15885734/pexels-photo-15885734/free-photo-of-snowy-hikes-in-waterton-lakes-national-park.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": 2,
+      "name": "varj patel",
+      "Designation": "tour for park",
+      "img": "https://images.pexels.com/photos/7348529/pexels-photo-7348529.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "Services": [
+    {
+      "id": 1,
+      "Description": "hello i m client 1",
+      "name": "client 1",
+      "location": "New York,USA",
+      "img": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?_gl=1*vovzdu*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTA5MDQkajM4JGwwJGgw"
+    },
+    {
+      "id": 2,
+      "Description": "hello i m client 2",
+      "name": "client 2",
+      "location": "Delhi,India",
+      "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?_gl=1*1a4xbcy*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTEwMTIkajU2JGwwJGgw"
+    },
+    {
+      "id": 3,
+      "Description": "hello i m client 3",
+      "name": "client 3",
+      "location": "New York,USA",
+      "img": "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?_gl=1*9ses57*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTEwNTEkajE3JGwwJGgw"
+    },
+    {
+      "id": 4,
+      "Description": "hello i m client 4",
+      "name": "client 4",
+      "location": "Ahmedabad,India",
+      "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?_gl=1*1a4xbcy*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTEwMTIkajU2JGwwJGgw"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": 3,
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "123456",
+      "status": "block"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
-// src/store.js
+
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     items: [
-        // example initial item
+
         { id: 1, text: 'Learn Redux Toolkit' },
     ],
 };

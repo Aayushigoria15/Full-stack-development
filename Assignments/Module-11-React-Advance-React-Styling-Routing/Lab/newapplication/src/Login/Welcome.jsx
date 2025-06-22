@@ -1,4 +1,4 @@
-// src/Welcome.js
+
 import React, { useContext } from 'react';
 import { AuthContext } from './AuthContext';
 
