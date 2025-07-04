@@ -3,12 +3,13 @@ import React from 'react'
 import Ahome from '../AComman/Asidebar'
 import Asidebar from '../AComman/Asidebar'
 import Amain from '../AComman/Amain'
+import AdminFooter from '../AComman/AdminFooter'
 
 function Dashboard() {
     return (
         <div>
             <Asidebar />
-            <Amain />
+            <Amain Aname="Dahboard Page" />
             <div className='container-fluid' >
                 <div className="container text-center py-5" style={{ maxWidth: 900 }}>
 
@@ -16,7 +17,7 @@ function Dashboard() {
 
                 </div>
             </div>
-
+            <AdminFooter />
         </div>
 
     )

@@ -7,24 +7,24 @@ const Asidebar = () => {
         <div>
             <div className="admin-sidebar">
                 <div className="sidebar-header">
-                    <h2>hello sidebar</h2>
+                    <h2>Travela</h2>
                 </div>
                 <nav className="sidebar-menu ">
                     <NavLink to="/adminhome" className="nav-item nav-link">🏠Home</NavLink>
                     <NavLink to="/dashboard" className="nav-item nav-link"> Dashboard</NavLink>
-                    <a href="/admin/users">👥 About</a>
-                    <a href="/admin/reports">📊 Service</a>
+                    <NavLink to="/adminabout" className="nav-item nav-link">👥 About</NavLink>
+                    <NavLink to="/adminservice" className="nav-item nav-link">📊 Service</NavLink>
                     <div className="nav-item  dropdown dropend " >
                         <div className="nav-link dropdown-toggle " style={{ color: "white" }} data-bs-toggle="dropdown" role="button" aria-expanded="false">
                             ⚙️ Blog
                         </div>
-                        <div className="dropdown-menu">
+                        <div className="dropdown-menu" style={{ zIndex: "1" }}>
                             <NavLink to="/blogmanage" className="dropdown-item" id='end-item'>Blog Manage</NavLink>
                             <NavLink to="/blogsadd" className="dropdown-item" id='end-item'>Blog Add</NavLink>
                         </div>
                     </div>
 
-                    <NavLink to="/packages">🚪 Packages</NavLink>
+
                     <div className="nav-item dropdown dropend">
                         <div className="nav-link dropdown-toggle " style={{ color: "white" }} data-bs-toggle="dropdown" role="button" aria-expanded="false">Pages</div>
                         <div className="dropdown-menu">

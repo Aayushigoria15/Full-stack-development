@@ -21,7 +21,7 @@ function Header2({ title, name }) {
                         <div className="col-lg-4 text-center text-lg-end">
                             <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
                                 <a href="#"><small className="me-3 text-light"><i className="fa fa-user me-2" />Register</small></a>
-                                <a href="#"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></a>
+                                <NavLink to="/login"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></NavLink>
                                 <div className="dropdown">
                                     <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> My Dashboard</small></a>
                                     <div className="dropdown-menu rounded">

@@ -10,7 +10,8 @@ function Header() {
                     <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                         <NavLink to="/" className="navbar-brand p-0">
                             <h1 className="m-0"><i className="fa fa-map-marker-alt me-3" />Travela</h1>
-                            {/* <img src="img/logo.png" alt="Logo"> */}
+                            <img src="img/logo.png" alt="Logo" />
+
                         </NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span className="fa fa-bars" />

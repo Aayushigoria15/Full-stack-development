@@ -19,6 +19,11 @@ import Guidsmanage from "./Admin/APages/Guidesmanage";
 import Asidebar from "./Admin/AComman/Asidebar";
 import Amain from "./Admin/AComman/Amain";
 import Adminhome from "./Admin/APages/Adminhome";
+import AboutAdmin from "./Admin/APages/AboutAdmin";
+import GuidesAdd from "./Admin/APages/GuidesAdd";
+import AdminServices from "./Admin/APages/AdminServices";
+import AddService from "./Admin/APages/AddService";
+import Login from "./Website/Pages/Login";
 
 function App() {
   return (
@@ -38,6 +43,7 @@ function App() {
             <Route path="/tour" element={<Tour />} />
             <Route path="/testi" element={<Testimonial />} />
             <Route path="/guide" element={<Guides />} />
+            <Route path="/login" element={<Login />} />
 
             {/* Not found */}
             <Route path="*" element={<NotFound />} />
@@ -50,6 +56,10 @@ function App() {
             <Route path="/blogsadd" element={<BlogsAdd />} />
             <Route path="/guidesmanage" element={<Guidsmanage />} />
             <Route path="/adminhome" element={<Adminhome />} />
+            <Route path="/adminabout" element={<AboutAdmin />} />
+            <Route path="/addguide" element={<GuidesAdd />} />
+            <Route path="/adminservice" element={<AdminServices />} />
+            <Route path="/addservice" element={<AddService />} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -40,7 +40,7 @@ function Blog() {
                                             <div className="blog-item">
                                                 <div className="blog-img">
                                                     <div className="blog-img-inner">
-                                                        <img className="img-fluid w-100 rounded-top" src={data.img} alt="Image" />
+                                                        <img className="img-fluid w-100 rounded-top" style={{ height: "300px" }} n src={data.img} alt="Image" />
                                                         <div className="blog-icon">
                                                             <a href="#" className="my-auto"><i className="fas fa-link fa-2x text-white" /></a>
                                                         </div>
