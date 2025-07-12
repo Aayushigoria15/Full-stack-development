@@ -1,0 +1,122 @@
+.container {
+  width: 90%;
+  box-sizing: border-box;
+}
+#header {
+  background-color: rgba(40, 40, 45, 0.9490196078431372);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.navlist .list {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  padding-top: 30px;
+}
+.navab {
+  font-size: clamp(11px, 2.5vw, 16px);
+  color: #e9a438;
+  font-family: "Aachen BT";
+  text-decoration: none;
+}
+.nava {
+  font-size: clamp(11px, 2.5vw, 16px);
+  color: #ffffff;
+  font-family: "Aachen BT";
+  text-decoration: none;
+}
+.logo {
+  width: 100px;
+}
+#contact {
+  background-color: rgba(40, 40, 45, 0.9490196078431372);
+}
+.contact-us {
+  display: flex;
+  padding-top: 100px;
+}
+.contact-img {
+  width: 50%;
+  padding: 20px 40px 40px 40px;
+}
+.contact-content {
+  width: 50%;
+  padding-left: 40px;
+  font-family: "Aachen BT";
+}
+
+.contact-h2 {
+  width: 75%;
+  font-size: clamp(30px, 5vw, 67px);
+  letter-spacing: 1px;
+  color: #e58f00;
+}
+.contact-p {
+  width: 75%;
+  font-size: clamp(15px, 3vw, 25px);
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.btn-contact {
+  border-radius: 5px;
+  background-color: #e58f00;
+  font-size: clamp(15px, 3vw, 25px);
+  letter-spacing: 0px;
+  color: #28282d;
+  padding: 10px 20px;
+}
+#About {
+  background-color: black;
+  padding: 100px 0 100px 0;
+}
+#About .row {
+  /* border: 2px solid; */
+  display: flex;
+  gap: 10px;
+}
+#About .row .col {
+  width: 50%;
+  border: 2px solid;
+}
+.col img {
+  width: 80%;
+  padding: 0 0 20px 100px;
+}
+.about-h3 {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Aachen BT";
+  padding-top: 50px;
+}
+.about-p {
+  width: 80%;
+  font-size: clamp(20px, 3.5vw, 33px);
+  color: #ffffff;
+  font-family: "Aachen BT";
+}
+#Our-food-quality {
+  width: 2037px;
+  height: 1691px;
+  background-color: #e58f00;
+}
+#Our-food-quality .row .col {
+  width: 50%;
+  /* border: 2px solid white; */
+  position: relative;
+}
+#Our-food-quality .our-h3 {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Aachen BT";
+  padding: 300px 0 0 100px;
+}
+.our-p {
+  width: 70%;
+  font-size: clamp(20px, 3.5vw, 33px);
+  color: #ffffff;
+  font-family: "Aachen BT";
+  padding: 0 0 0px 100px;
+}
