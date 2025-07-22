@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import MyContext from '../../context/data/MyContext'
-import { set } from 'firebase/database';
+
 import { setUserId } from 'firebase/analytics';
 
 function Adduser() {

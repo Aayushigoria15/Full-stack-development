@@ -1,17 +1,77 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Header() {
+    const redirect = useNavigate()
+
+    useEffect(() => {
+        if (!localStorage.getItem("Uid")) {
+            redirect("/login")
+        }
+    })
+
+    const logout = () => {
+        localStorage.removeItem("Uid")
+        localStorage.removeItem("Uname")
+        redirect("/login")
+        toast.success("User logout Successs..")
+    }
     return (
         <div>
+            {/* Topbar Start */}
+            <div className="container-fluid bg-primary px-5 d-none d-lg-block">
+                <div className="row gx-0">
+                    <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                        <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
+                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><i className="fab fa-twitter fw-normal" /></a>
+                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><i className="fab fa-facebook-f fw-normal" /></a>
+                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><i className="fab fa-linkedin-in fw-normal" /></a>
+                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><i className="fab fa-instagram fw-normal" /></a>
+                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href><i className="fab fa-youtube fw-normal" /></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 text-center text-lg-end">
+                        <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
+
+                            <NavLink to="/login"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></NavLink>
+                            <div className="dropdown">
+                                <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> Hello {localStorage.getItem("Uname")}</small></a>
+                                <div className="dropdown-menu rounded">
+                                    <Link to="/uprofile" className="dropdown-item text-dark"><i className="fas fa-user-alt me-2" /> My Profile</Link>
+
+                                    {
+                                        (() => {
+                                            if (localStorage.getItem("Uid")) {
+                                                return (
+                                                    <>
+                                                        <Link onClick={logout} className="nav-item nav-link text-dark"><i className="fas fa-power-off me-2" /> Log Out</Link>
+                                                    </>
+                                                )
+                                            }
+                                            else {
+                                                return (
+                                                    <>
+                                                        <NavLink to="/login" className="nav-item nav-link">login</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                        })()
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 {/* Navbar & Hero Start */}
                 <div className="container-fluid position-relative p-0">
                     <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                         <NavLink to="/" className="navbar-brand p-0">
                             <h1 className="m-0"><i className="fa fa-map-marker-alt me-3" />Travela</h1>
-                            <img src="img/logo.png" alt="Logo" />
-
+                            {/* <img src="img/logo.png" alt="Logo"> */}
                         </NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span className="fa fa-bars" />
@@ -36,7 +96,7 @@ function Header() {
                                 </div>
                                 <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                             </div>
-                            <a href className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+
                         </div>
                     </nav>
                     {/* Carousel Start */}

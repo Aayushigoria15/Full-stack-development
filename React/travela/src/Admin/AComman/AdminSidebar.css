@@ -53,6 +53,17 @@ nav {
   padding-top: 15px;
 }
 
+.sidebar {
+  position: relative;
+  z-index: 1000;
+}
+.main-wrapper {
+  overflow: visible; /* NOT hidden */
+}
+.sidebar-menu #iend-item {
+  position: absolute;
+  z-index: 1050;
+}
 .online-dot {
   display: inline-block;
   height: 10px;

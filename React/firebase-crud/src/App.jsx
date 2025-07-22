@@ -7,15 +7,20 @@ import Updateuser from './Pages/updateuser/Updateuser'
 
 function App() {
   return (
-    <MyState>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/adduser' element={<Adduser />} />
-          <Route path='/updateuser' element={<Updateuser />} />
-        </Routes>
-      </BrowserRouter>
-    </MyState>
+    <div>
+      <div className="text-lg">
+        Tailwind is working!
+      </div>
+      <MyState>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/adduser' element={<Adduser />} />
+            <Route path='/updateuser' element={<Updateuser />} />
+          </Routes>
+        </BrowserRouter>
+      </MyState>
+    </div>
   )
 }
 
