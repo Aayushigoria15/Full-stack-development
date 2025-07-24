@@ -74,7 +74,7 @@
     },
     {
       "id": "2",
-      "Description": "hello i m client 2",
+      "Description": "hello i m client 2 ",
       "name": "client 2",
       "location": "Delhi,India",
       "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?_gl=1*1a4xbcy*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTEwMTIkajU2JGwwJGgw"
@@ -90,7 +90,7 @@
   "user": [
     {
       "id": "1",
-      "name": "users1",
+      "name": "Zoe doe",
       "email": "user1@gmail.com",
       "img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?_gl=1*1cvah9o*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTI3Nzk2ODUkbzIwJGcxJHQxNzUyNzc5NzA5JGozNiRsMCRoMA..",
       "password": "123456",

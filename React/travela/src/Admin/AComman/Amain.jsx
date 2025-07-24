@@ -34,30 +34,33 @@ function Amain({ Aname }) {
                         <div className="col-lg-4 text-center text-lg-end">
                             <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
 
-
+                                <Link to="/alogin"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></Link>
                                 <div className="dropdown">
-                                    <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" />  Hello {localStorage.getItem("Aname")}</small></a>
-                                    <div className="dropdown-menu rounded">
-                                        <Link to="/aprofile" className="dropdown-item"><i className="fas fa-user-alt me-2" /> My Profile</Link>
-                                        {
-                                            (() => {
-                                                if (localStorage.getItem("Uid")) {
-                                                    return (
-                                                        <>
-                                                            <Link onClick={logout} className="nav-item nav-link text-dark"><i className="fas fa-power-off me-2" /> Log Out</Link>
-                                                        </>
-                                                    )
-                                                }
-                                                else {
-                                                    return (
-                                                        <>
-                                                            <NavLink to="/login" className="nav-item nav-link">login</NavLink>
-                                                        </>
-                                                    )
-                                                }
-                                            })()
-                                        }
+                                    <div className="dropdown">
+                                        <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> Hello {localStorage.getItem("Aname")}</small></a>
+                                        <div className="dropdown-menu rounded">
+                                            <Link to="/aprofile" className="dropdown-item text-dark"><i className="fas fa-user-alt me-2" /> My Profile</Link>
 
+                                            {
+                                                (() => {
+                                                    if (localStorage.getItem("Aid")) {
+                                                        return (
+                                                            <>
+                                                                <Link onClick={logout} className="nav-item nav-link text-dark"><i className="fas fa-power-off me-2" /> Log Out</Link>
+                                                            </>
+                                                        )
+                                                    }
+                                                    else {
+                                                        return (
+                                                            <>
+                                                                <NavLink to="/alogin" className="nav-item nav-link">login</NavLink>
+                                                            </>
+                                                        )
+                                                    }
+                                                })()
+                                            }
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
