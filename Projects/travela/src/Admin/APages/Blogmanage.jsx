@@ -171,7 +171,7 @@ function Blogmanage() {
                         </div>
                     </div>
                 </div>
-                <div className='container' style={{ zIndex: "0" }}>
+                <div className='container'>
                     {
                         updatemodel && (
                             <div className='container'>

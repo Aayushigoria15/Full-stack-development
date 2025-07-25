@@ -1,118 +1,156 @@
-import React, { useState } from 'react'
-import {
-    MDBBtn,
-    MDBContainer,
-    MDBCard,
-    MDBCardBody,
-    MDBCardImage,
-    MDBRow,
-    MDBCol,
-    MDBIcon,
-    MDBInput
-}
-    from 'mdb-react-ui-kit';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
-    const [form, setform] = useState({
-        email: "",
-        password: ""
-    })
+    useEffect(() => {
+        if (localStorage.getItem("Uid")) {
+            redirect("/")
+        }
+    }, [])
 
-    const getchange = (e) => {
-        setform({
+    const [form, setForm] = useState({
+        email: '',
+        password: ''
+    });
+
+    const redirect = useNavigate()
+
+    const getChange = (e) => {
+        setForm({
             ...form,
             [e.target.name]: e.target.value
-        })
-        console.log(form)
-    }
-    const getsubmit = async (e) => {
-        e.preventDefault()
-        try {
-            // destructuring 
-            const { email, password } = form
+        });
+    };
 
-            if (email == "" || password == "") {
-                console.log("Required Field..!!")
-                return false
-            }
-            const res = await axios.get(`http://localhost:3000/user?email=${email}`)
-            console.log(res.data)
-            // email id match...
-            if (res.data.length === 0) {
-                console.log("Email does not match...!")
-                toast.error("Email does not match...!")
-                return false
-            }
+    const getSubmit = async (e) => {
+        e.preventDefault();
+        const { email, password } = form;
 
-            // password match
-            let admin = res.data[0]
-            console.log(admin)
-
-
-            if (admin.password !== password) {
-                console.log("Password Does not Match..!")
-                toast.error("Password Does not Match..!")
-                return false
-            }
-
-
-            localStorage.setItem("Aid", admin.id)
-            localStorage.setItem("Aname", admin.name)
-            redirect("/dash")
-            console.log("Login succeefully..!")
-            toast.success("Login successfully...!")
-
-
-        } catch (error) {
-            console.log("API not NotFound..!!")
-
+        if (email.trim() === '' || password.trim() === '') {
+            toast.warn('All fields are required');
+            return;
         }
 
+        try {
+            const res = await axios.get(`http://localhost:3000/user?email=${email}`);
+            const data = res.data;
 
-    }
+            if (data.length === 0) {
+                toast.error('Email does not exist!');
+                return;
+            }
+
+            const user = data[0];
+            if (user.password !== password) {
+                toast.error('Incorrect password!');
+                return;
+            }
+
+            localStorage.setItem('Uid', user.id);
+            localStorage.setItem('Uname', user.name);
+            toast.success('Login successful!');
+
+            setTimeout(() => {
+                redirect("/")
+            }, 1000);
+        } catch (error) {
+            toast.error('Something went wrong. Please try again later.');
+            console.error('API error:', error);
+        }
+    };
+
     return (
         <div>
-            <MDBContainer className="my-5">
+            <section className="vh-100">
+                <div className="container py-5 h-100">
+                    <div className="row d-flex align-items-center justify-content-center h-100">
+                        <div className="col-md-8 col-lg-7 col-xl-6">
+                            <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                                className="img-fluid"
+                                alt="Phone image"
+                            />
+                        </div>
+                        <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                            <form onSubmit={getSubmit}>
+                                <div className="form-outline mb-4">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={form.email}
+                                        onChange={getChange}
+                                        className="form-control form-control-lg fs-6"
+                                        placeholder="EMAIL ADDRESS"
+                                    />
+                                </div>
 
-                <MDBCard>
-                    <MDBRow className='g-0'>
+                                <div className="form-outline mb-2">
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        value={form.password}
+                                        onChange={getChange}
+                                        className="form-control form-control-lg fs-6"
+                                        placeholder="PASSWORD"
+                                    />
+                                </div>
 
-                        <MDBCol md='6'>
-                            <MDBCardImage src='https://images.pexels.com/photos/1051073/pexels-photo-1051073.jpeg?_gl=1*14mmncj*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTEzNjgyODIkbzE1JGcxJHQxNzUxMzY4ODUxJGozMiRsMCRoMA..' alt="login form" className='rounded-start w-100 ' />
-                        </MDBCol>
-
-                        <MDBCol md='6'>
-                            <MDBCardBody className='d-flex flex-column my-5'>
-                                <form action="" onSubmit={getsubmit}>
-                                    <div className='d-flex flex-row mt-2 '>
-
-                                        <h1 className="m-0 text-primary"><i className="fa fa-map-marker-alt me-3 text-primary" />Travela</h1>
+                                <div className="d-flex justify-content-between mb-4">
+                                    <div className="form-check">
+                                        <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            id="rememberMe"
+                                            defaultChecked
+                                        />
+                                        <label className="form-check-label" htmlFor="rememberMe">
+                                            Remember me
+                                        </label>
                                     </div>
+                                    <a href="#!">Forgot password?</a>
+                                </div>
 
-                                    <h5 className="fw-normal my-4 pb-3" style={{ letterSpacing: '1px' }}>Sign into your account</h5>
+                                <button
+                                    type="submit"
+                                    className="btn btn-primary btn-lg fs-6 btn-block rounded-1 col-12"
+                                    style={{ backgroundColor: '#4568b4ff' }}
+                                >
+                                    SIGN IN
+                                </button>
 
-                                    <MDBInput wrapperClass='mb-4' onChange={getchange} name='email' value={form.email} label='Email address' id='formControlLg' type='email' size="lg" />
-                                    <MDBInput wrapperClass='mb-4' onChange={getchange} name='password' value={form.password} label='Password' id='formControlLg' type='password' size="lg" />
+                                <div className="divider d-flex align-items-center my-4 text-dark">
+                                    <hr className="flex-grow-1" />OR<hr className="flex-grow-1" />
+                                </div>
 
-                                    <MDBBtn className="mb-4 px-5" color='dark' size='lg'>Login</MDBBtn>
-                                    <a className="small text-muted" href="#!">Forgot password?</a>
-                                    <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Don't have an account? <a href="#!" style={{ color: '#393f81' }}>Register here</a></p>
+                                <a
+                                    className="btn btn-primary btn-lg btn-block rounded-1 fs-6 col-12 mb-2"
+                                    style={{ backgroundColor: '#3b5998' }}
+                                    href="#!"
+                                    role="button"
+                                >
+                                    <i className="fab fa-facebook-f me-2" />
+                                    CONTINUE WITH FACEBOOK
+                                </a>
 
-                                    <div className='d-flex flex-row justify-content-start'>
-                                        <a href="#!" className="small text-muted me-1">Terms of use.</a>
-                                        <a href="#!" className="small text-muted">Privacy policy</a>
-                                    </div>
-                                </form>
-                            </MDBCardBody>
-                        </MDBCol>
-
-                    </MDBRow>
-                </MDBCard>
-
-            </MDBContainer>
+                                <a
+                                    className="btn btn-primary btn-lg btn-block rounded-1 fs-6 col-12"
+                                    style={{ backgroundColor: '#55acee' }}
+                                    href="#!"
+                                    role="button"
+                                >
+                                    <i className="fab fa-twitter me-2" />
+                                    CONTINUE WITH TWITTER
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    )
+    );
 }
 
-export default Login
+export default Login;

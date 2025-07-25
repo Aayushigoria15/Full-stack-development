@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Amain({ Aname }) {
+    const redirect = useNavigate()
+
+    useEffect(() => {
+        if (!localStorage.getItem("Aid")) {
+            redirect("/alogin")
+        }
+    })
+
+    const logout = () => {
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        redirect("/alogin")
+        toast.success("Admin logout Successs..")
+    }
     return (
         <div>
             <main className="admin-main bg-breadcrumb" style={{ height: "300px" }} >
@@ -17,16 +33,34 @@ function Amain({ Aname }) {
                         </div>
                         <div className="col-lg-4 text-center text-lg-end">
                             <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
-                                <a href="#"><small className="me-3 text-light"><i className="fa fa-user me-2" />Register</small></a>
-                                <a href="#"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></a>
+
+                                <Link to="/alogin"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></Link>
                                 <div className="dropdown">
-                                    <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> My Dashboard</small></a>
-                                    <div className="dropdown-menu rounded">
-                                        <a href="#" className="dropdown-item"><i className="fas fa-user-alt me-2" /> My Profile</a>
-                                        <a href="#" className="dropdown-item"><i className="fas fa-comment-alt me-2" /> Inbox</a>
-                                        <a href="#" className="dropdown-item"><i className="fas fa-bell me-2" /> Notifications</a>
-                                        <a href="#" className="dropdown-item"><i className="fas fa-cog me-2" /> Account Settings</a>
-                                        <a href="#" className="dropdown-item"><i className="fas fa-power-off me-2" /> Log Out</a>
+                                    <div className="dropdown">
+                                        <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> Hello {localStorage.getItem("Aname")}</small></a>
+                                        <div className="dropdown-menu rounded">
+                                            <Link to="/aprofile" className="dropdown-item text-dark"><i className="fas fa-user-alt me-2" /> My Profile</Link>
+
+                                            {
+                                                (() => {
+                                                    if (localStorage.getItem("Aid")) {
+                                                        return (
+                                                            <>
+                                                                <Link onClick={logout} className="nav-item nav-link text-dark"><i className="fas fa-power-off me-2" /> Log Out</Link>
+                                                            </>
+                                                        )
+                                                    }
+                                                    else {
+                                                        return (
+                                                            <>
+                                                                <NavLink to="/alogin" className="nav-item nav-link">login</NavLink>
+                                                            </>
+                                                        )
+                                                    }
+                                                })()
+                                            }
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

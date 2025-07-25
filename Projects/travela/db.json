@@ -27,29 +27,22 @@
   ],
   "guies": [
     {
-      "id": "1",
-      "name": "Het patel",
-      "Designation": "Tour Guide & Local Expert",
-      "Description": "Experienced guide passionate about sharing knowledge and exploring new horizons. Let's navigate together!",
-      "img": "https://images.pexels.com/photos/15885734/pexels-photo-15885734/free-photo-of-snowy-hikes-in-waterton-lakes-national-park.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
       "id": "2",
-      "name": "varj patel2",
+      "name": "JHON DOE",
       "Designation": "Travel Guide & Adventure Specialist",
       "Description": "Your trusted companion for discovery. Expert insights, local secrets, and unforgettable experiences await!",
       "img": "https://images.pexels.com/photos/7348529/pexels-photo-7348529.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       "id": "3",
-      "name": "John Marry",
+      "name": "JOHN MARRY",
       "Designation": "Knowledgeable Guide & Cultural Ambassador",
       "Description": "Dedicated guide with a flair for storytelling. Join me for immersive adventures and hidden gems!",
       "img": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?_gl=1*k2s4jd*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTExMDk3NjAkbzExJGcxJHQxNzUxMTA5ODAyJGoxOCRsMCRoMA.."
     },
     {
       "id": "1751132082505",
-      "name": "ABC XYZ",
+      "name": "MARK ZOE",
       "Designation": "Travel Guide & Adventure Specialist",
       "Description": "Experienced guide passionate about sharing knowledge and exploring new horizons. Let's navigate together!",
       "img": "https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?_gl=1*18q3mpc*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTExMzE2NTEkbzEzJGcxJHQxNzUxMTMxNjY2JGo0NSRsMCRoMA.."
@@ -58,9 +51,17 @@
   "admin": [
     {
       "id": "1",
-      "name": "admin",
+      "name": "Alex",
       "email": "admin@gmail.com",
+      "img": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?_gl=1*j3b3ij*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTI4MTgxODQkbzIxJGcxJHQxNzUyODE4MjAyJGo0MiRsMCRoMA..",
       "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "James",
+      "email": "admin2@gmail.com",
+      "img": "https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg?_gl=1*1a0wjf2*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTI4MTgxODQkbzIxJGcxJHQxNzUyODE4MjQ1JGo2MCRsMCRoMA..",
+      "password": "123456"
     }
   ],
   "Services": [
@@ -73,7 +74,7 @@
     },
     {
       "id": "2",
-      "Description": "hello i m client 2",
+      "Description": "hello i m client 2 ",
       "name": "client 2",
       "location": "Delhi,India",
       "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?_gl=1*1a4xbcy*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTEwMTIkajU2JGwwJGgw"
@@ -84,20 +85,14 @@
       "name": "client 3",
       "location": "Delhi,India",
       "img": "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?_gl=1*9ses57*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTAwNTA4ODIkbzgkZzEkdDE3NTAwNTEwNTEkajE3JGwwJGgw"
-    },
-    {
-      "id": "1751139726913",
-      "Description": "hello i m client 4",
-      "name": "client 4",
-      "location": "New York,USA",
-      "img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?_gl=1*1o8pfcq*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTExMzk3NjkkbzE0JGcxJHQxNzUxMTM5Nzc3JGo1MiRsMCRoMA.."
     }
   ],
   "user": [
     {
       "id": "1",
-      "name": "user1",
+      "name": "Zoe doe",
       "email": "user1@gmail.com",
+      "img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?_gl=1*1cvah9o*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTI3Nzk2ODUkbzIwJGcxJHQxNzUyNzc5NzA5JGozNiRsMCRoMA..",
       "password": "123456",
       "status": "unblock"
     },
@@ -105,6 +100,7 @@
       "id": "2",
       "name": "user2",
       "email": "user2@gmail.com",
+      "img": "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?_gl=1*1w4xr69*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTI3Nzk2ODUkbzIwJGcxJHQxNzUyNzc5NzU4JGo1MSRsMCRoMA..",
       "password": "1234",
       "status": "unblock"
     },
@@ -112,6 +108,7 @@
       "id": "3",
       "name": "user3",
       "email": "user3@gmail.com",
+      "img": "https://images.pexels.com/photos/2589650/pexels-photo-2589650.jpeg?_gl=1*ellsxu*_ga*MTAzMTY1MzgzMC4xNzM0MDgzNzI2*_ga_8JE65Q40S6*czE3NTI3Nzk2ODUkbzIwJGcxJHQxNzUyNzc5Nzk4JGoxMSRsMCRoMA..",
       "password": "123456",
       "status": "block"
     }

@@ -11,14 +11,13 @@ const Asidebar = () => {
                 </div>
                 <nav className="sidebar-menu ">
                     <NavLink to="/adminhome" className="nav-item nav-link">🏠Home</NavLink>
-                    <NavLink to="/dashboard" className="nav-item nav-link"> Dashboard</NavLink>
                     <NavLink to="/adminabout" className="nav-item nav-link">👥 About</NavLink>
                     <NavLink to="/adminservice" className="nav-item nav-link">📊 Service</NavLink>
                     <div className="nav-item  dropdown dropend " >
                         <div className="nav-link dropdown-toggle " style={{ color: "white" }} data-bs-toggle="dropdown" role="button" aria-expanded="false">
                             ⚙️ Blog
                         </div>
-                        <div className="dropdown-menu" style={{ zIndex: "1" }}>
+                        <div className="dropdown-menu" >
                             <NavLink to="/blogmanage" className="dropdown-item" id='end-item'>Blog Manage</NavLink>
                             <NavLink to="/blogsadd" className="dropdown-item" id='end-item'>Blog Add</NavLink>
                         </div>
@@ -39,7 +38,7 @@ const Asidebar = () => {
 
                 </nav>
                 <div className="sidebar-footer">
-                    <p>Logged in as: <strong>Admin</strong></p>
+                    <p>Logged in as: <strong> {localStorage.getItem("Aname")}</strong></p>
                     <p>Status: <span className="online-dot"></span> Online</p>
                 </div>
 

@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Ahome from '../AComman/Asidebar'
 import Asidebar from '../AComman/Asidebar'
+import AdminFooter from '../AComman/AdminFooter'
 
 function BlogsAdd() {
 
@@ -96,6 +97,7 @@ function BlogsAdd() {
                     </form>
                 </div>
             </div>
+            <AdminFooter/>
         </div>
     )
 
